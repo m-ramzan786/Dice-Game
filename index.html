@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character set and viewport for responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Set the title of the page -->
+    <title>Dice Game</title>
+</head>
+<body>
+    <!-- Main heading of the page -->
+    <h1>Dice Game🎲</h1>
+
+    <!-- Main container for the game content -->
+    <div class="container">
+        <!-- Display the current player's turn -->
+        <h2 id="message">Player 1 Turn</h2>
+
+        <!-- Container for both players' scores and dice -->
+        <div class="players">
+            <!-- Player 1 section -->
+            <div id="player1">
+                <!-- Display Player 1's score -->
+                <h3>Score: <span id="player1Scoreboard">0</span></h3>
+                <!-- Display Player 1's dice with an initial class of 'active' -->
+                <div id="player1Dice" class="dice active">-</div>
+            </div>
+
+            <!-- Player 2 section -->
+            <div id="player2">
+                <!-- Display Player 2's score -->
+                <h3>Score: <span id="player2Scoreboard">0</span></h3>
+                <!-- Display Player 2's dice -->
+                <div id="player2Dice" class="dice">-</div>
+            </div>
+        </div>
+
+        <!-- Button for rolling the dice -->
+        <button type="button" id="rollBtn">Roll Dice 🎲</button>
+
+        <!-- Modal window for displaying the winner -->
+        <div id="winnerWindow">
+            <div class="winnerModal">
+                <!-- Display the winner -->
+                <h2 id="winner"></h2>
+                <!-- Display the winning score -->
+                <h3 id="winnerScore"></h3>
+                <!-- Button to reset the game -->
+                <button type="button" id="resetBtn">Reset Game 🔄</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="index.js"></script>
+</body>
+</html>
